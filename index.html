@@ -15,8 +15,9 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<nav class="d-none d-md-flex navbar sticky-top navbar-dark justify-content-end">
-		  <a class="navbar-brand mr-4" id="accueil" href="#">Accueil</a>
+		<span id="accueil"></span>
+		<nav class="d-none d-sm-flex navbar sticky-top navbar-dark justify-content-end">
+		  <a class="navbar-brand mr-4" href="#accueil">Accueil</a>
 		  <a class="navbar-brand mr-4" href="#profil">Profil</a>
 			<a class="navbar-brand mr-4" href="#comp">Compétences</a>
 			<a class="navbar-brand mr-4" href="#exp">Exp pro.</a>
@@ -24,35 +25,19 @@
 		  <a class="navbar-brand mr-4" href="#formation">Formations</a>
 		  <a class="navbar-brand mr-4" href="#contact">Contact</a>
 		</nav>
-		<!--Navbar burger-->
-		<nav class="d-block d-sm-none d-navbar sticky-top navbar-light navbar-1 white">
-		  <!-- Navbar brand -->
-		  <a class="navbar-brand" href="#">Navbar</a>
-		  <!-- Collapse button -->
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-		    aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-		  <!-- Collapsible content -->
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-		    <!-- Links -->
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Features</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Pricing</a>
-		      </li>
-		    </ul>
-		    <!-- Links -->
-		  </div>
-		  <!-- Collapsible content -->
+		<nav class="d-flex d-sm-none navbar sticky-top navbar-dark">
+		  <a class="navbar-brand mr-4" href="#accueil"><i class="fas fa-home"></i></a>
+		  <a class="navbar-brand mr-4" href="#profil"><i class="fas fa-user-tie"></i></a>
+			<a class="navbar-brand mr-4" href="#comp"><i class="fab fa-html5"></i></a>
+			<a class="navbar-brand mr-4" href="#exp"><i class="fas fa-building"></i></a>
+		  <a class="navbar-brand mr-4" href="#projet"><i class="fas fa-briefcase"></i></a>
+		  <a class="navbar-brand mr-4" href="#formation"><i class="fas fa-university"></i></a>
+		  <a class="navbar-brand mr-4" href="#contact"><i class="fas fa-address-book"></i></a>
 		</nav>
-		<!--/.Navbar-->
+
     <div id="slide1">
       <div class="slide_inside text-center">
-        <h1 class="mt-5 pt-5">Mickael BAGUET</h1>
+        <h1 class="mt-5 pt-3 pt-sm-5">Mickael BAGUET</h1>
         <p>Développeur web et web mobile - Junior</p>
       </div>
     </div>
@@ -65,7 +50,7 @@
 					<div data-aos="fade-right" class="col-12 col-md-4">
 						<img src="assets/img/moi2.png" alt="Photo perso" width="340" class="shadow-lg img-fluid rounded">
 					</div>
-					<div data-aos="fade-left" class="col-12 col-md-8 my-5">
+					<div data-aos="fade-left" class="col-12 col-md-8 my-5 px-4 px-sm-0">
 						<p>J’ai pu acquérir grâce à mes dernières expériences professionnelles la capacité d’écouter, d’analyser et de répondre aux problèmes d’un public varié.</p>
 						<p>Dynamique et autonome, je sais m’adapter rapidement à diverses situations.</p>
 						<p>Bon niveau d’anglais en lecture et écriture.</p>
@@ -76,11 +61,44 @@
     </section>
 		<!-- Section Compétence -->
 		<section id="comp">
-	    <div id="slide2">
-				<div class="slide_inside">
-					<h2 class="text-center pb-3">MES COMPETENCES</h2>
-		      <div class="slide_inside mt-3">
-						<div class="d-flex targetComp justify-content-around">
+	    <div class="text-center" id="slide2">
+					<h2 class="pb-5">MES COMPETENCES</h2>
+		      <div class="row d-flex mt-3">
+						<div class="d-flex justify-content-center justify-content-lg-end col-12 col-lg-4">
+							<div class="col-4">
+								<img data-aos="fade-up-right" src="assets/img/icons-html5.png" alt="">
+								<div data-aos="fade-up-right" class="circle" id="html"><strong></strong></div>
+							</div>
+							<div class="col-4">
+								<img data-aos="fade-up-right" src="assets/img/icons-css3.png" alt="">
+								<div data-aos="fade-up-right" class="circle" id="css"><strong></strong></div>
+							</div>
+						</div>
+						<div class="d-flex col-12 col-lg-4">
+							<div class="col-4">
+								<img data-aos="fade-up" src="assets/img/icons-bootstrap.png" alt="">
+								<div data-aos="fade-up" class="circle" id="bootstrap"><strong></strong></div>
+							</div>
+							<div class="col-4">
+								<img data-aos="fade-up" src="assets/img/icons-javascript.png" alt="">
+								<div data-aos="fade-up" class="circle" id="javascript"><strong></strong></div>
+							</div>
+							<div class="col-4">
+								<img data-aos="fade-up" src="assets/img/icons-jquery.png" width="48px" height="48px" alt="">
+								<div data-aos="fade-up" class="circle" id="jquery"><strong></strong></div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center justify-content-lg-start col-12 col-lg-4">
+							<div class="col-4">
+								<img data-aos="fade-up-left" src="assets/img/icons-angularjs.png" alt="">
+								<div data-aos="fade-up-left" class="circle" id="angularjs"><strong></strong></div>
+							</div>
+							<div class="col-4">
+								<img data-aos="fade-up-left" src="assets/img/icons-php.png" alt="">
+								<div data-aos="fade-up-left" class="circle" id="php"><strong></strong></div>
+							</div>
+						</div>
+						<!-- <div class="d-flex targetComp justify-content-around">
 							<img data-aos="fade-up-right" src="assets/img/icons-html5.png" alt="">
 							<img data-aos="fade-up-right" src="assets/img/icons-css3.png" alt="">
 							<img data-aos="fade-up" src="assets/img/icons-bootstrap.png" alt="">
@@ -97,15 +115,14 @@
 					    <div data-aos="fade-up" class="circle" id="jquery"><strong></strong></div>
 					    <div data-aos="fade-up-left" class="circle" id="angularjs"><strong></strong></div>
 					    <div data-aos="fade-up-left" class="circle" id="php"><strong></strong></div>
-					  </div>
+					  </div> -->
 					</div>
-	    	</div>
 	    </div>
 		</section>
 		<!-- Section Parcours pro -->
 		<span id="exp"></span>
 		<section>
-      <div class="row noir mx-4 my-5 d-block justify-content-center">
+      <div class="row noir mx-1 mx-sm-4 my-5 d-block justify-content-center">
 				<h2 class="text-center mb-5">EXPÉRIENCES PROFESSIONNELLES</h2>
 				<ul class="timeline">
 					<!-- Expérience 1 -->
@@ -184,7 +201,7 @@
 			<div id="slide3">
 				<h2 class="text-center mb-5">MES PROJETS</h2>
 				<div class="row d-flex noir text-center justify-content-around">
-					<div data-aos="zoom-out" class="card col-3">
+					<div data-aos="zoom-out" class="card col-10 col-sm-3">
 						<a href="https://mickaelbaguet.github.io/IleBnB/">
 							<img class="card-img-top" src="assets/img/ileBnB.png" alt="Ile BnB">
 							<div class="card-body">
@@ -197,7 +214,7 @@
 							</div>
 						</a>
 					</div>
-					<div data-aos="zoom-out" class="card col-3">
+					<div data-aos="zoom-out" class="card col-10 col-sm-3 mt-5 mt-sm-0">
 						<a href="https://mickaelbaguet.github.io/Lame-a-nue/">
 							<img class="card-img-top" src="assets/img/Lame-a-nue.png" alt="Lame à nue">
 							<div class="card-body">
@@ -216,7 +233,7 @@
 		<!-- Section Formation -->
 		<span id="formation"></span>
 		<section>
-      <div class="row noir mx-4 my-5 d-block justify-content-center">
+      <div class="row noir mx-2 mx-sm-4 my-5 d-block justify-content-center">
 				<h2 class="text-center mb-5">FORMATIONS</h2>
 				<ul class="timeline">
 					<!-- Formation 1 -->
@@ -276,22 +293,22 @@
 			<div id="slide4">
 				<h2 class="text-center mb-5">CONTACT</h2>
 				<div class="row d-flex noir text-center justify-content-around">
-					<div data-aos="fade-right" class="col-2">
+					<div data-aos="fade-right" class="col-6 col-sm-2 mb-5 mb-sm-0">
 						<a href="https://github.com/MickaelBaguet">
 							<img src="assets/img/github.png" alt="Logo Github">
 						</a>
 					</div>
-					<div data-aos="fade-up" class="col-2">
+					<div data-aos="fade-up" class="col-6 col-sm-2 mb-5 mb-sm-0">
 						<a href="https://www.linkedin.com/in/mickael-baguet-713a35185/">
 							<img class="rounded" src="assets/img/link.png" alt="Logo Linkedin" width="120" height="120">
 						</a>
 					</div>
-					<div data-aos="fade-up"	 class="col-2">
+					<div data-aos="fade-up"	 class="col-6 col-sm-2 mb-5 mb-sm-0">
 						<a href="mailto:baguet.mickael@gmail.com">
 							<img src="assets/img/mail.png" alt="Logo Mail" width="120" height="120">
 						</a>
 					</div>
-					<div data-aos="fade-left" class="col-2">
+					<div data-aos="fade-left" class="col-6 col-sm-2 mb-5 mb-sm-0">
 						<a href="tel:0628640983">
 							<img src="assets/img/tel.png" alt="Logo Phone" width="120" height="120">
 						</a>

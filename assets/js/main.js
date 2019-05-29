@@ -19,10 +19,6 @@ $(function(){
       $('nav a').addClass('changeColor');
     }
   });
-  // Haut de page smooth
-  $('#accueil').on('click', function(){
-    $("html, body").animate({scrollTop : 0}, 1000);
-  });
   // Ancre smooth
   $('a').click(function(){
       $('html, body').animate({
@@ -78,7 +74,7 @@ $(function(){
   // Animation des cards
   $('.hiddenTxt').css({visibility: "hidden"});
   $('.card').on('mouseenter',function(){
-    $(this).animate({height: "320px"},500);
+    $(this).animate({height: "325px"},500);
     $(this).find('.hiddenTxt').animate({opacity: 1}, 500).css({visibility: "visible"});
   });
   $('.card').on('mouseleave',function(){

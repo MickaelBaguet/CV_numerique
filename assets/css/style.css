@@ -32,9 +32,12 @@ h2 {
 #slide2 {
 	background: url("../img/img4.jpg") center 0 no-repeat fixed;
 	height: 450px;
+	padding-top:50px;
 }
 #slide3 {
 	background: url("../img/img5.jpg") center 0 no-repeat fixed;
+	height: 525px;
+	padding-top:50px;
 }
 #slide4 {
 	background: url("../img/img6.jpg") center 0 no-repeat fixed;
@@ -211,4 +214,48 @@ nav{
 }
 .timeline-body > p + p {
     margin-top: 5px;
+}
+/* Mise en page pour les téléphones portables */
+@media screen and (max-device-width: 768px){
+	#slide2 {
+		height: 660px;
+	}
+	#slide3 {
+		height: 750px;
+		padding-top: 50px;
+	}
+	#slide4 {
+		height: 500px;
+	}
+}
+/* Responsive time line */
+@media (max-width: 767px) {
+  ul.timeline:before {
+      left: 40px;
+  }
+  ul.timeline > li > .timeline-panel {
+      width: calc(100% - 90px);
+      width: -moz-calc(100% - 90px);
+      width: -webkit-calc(100% - 90px);
+  }
+  ul.timeline > li > .timeline-badge {
+      left: 15px;
+      margin-left: 0;
+      top: 16px;
+  }
+  ul.timeline > li > .timeline-panel {
+      float: right;
+  }
+  ul.timeline > li > .timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+  }
+	ul.timeline > li > .timeline-panel:after {
+	    border-left-width: 0;
+	    border-right-width: 14px;
+	    left: -14px;
+	    right: auto;
+	}
 }
