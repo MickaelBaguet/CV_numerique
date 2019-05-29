@@ -62,9 +62,6 @@ nav{
 .navbar-brand{
 	font-size: 1em;
 }
-.card{
-	height: 240px;
-}
 .card a{
 	text-decoration: none;
 	color: inherit;
@@ -229,7 +226,20 @@ nav{
 		height: 660px;
 	}
 	#slide3 {
-		height: 750px;
+		height: 550;
+		padding-top: 50px;
+	}
+	#slide4 {
+		height: 500px;
+	}
+}
+/* Mise en page pour les téléphones portables */
+@media screen and (max-device-width: 576px){
+	#slide2 {
+		height: 660px;
+	}
+	#slide3 {
+		height: 950px;
 		padding-top: 50px;
 	}
 	#slide4 {

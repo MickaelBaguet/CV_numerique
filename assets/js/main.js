@@ -72,14 +72,14 @@ $(function(){
     });
   }
   // Animation des cards
-  $('.hiddenTxt').css({visibility: "hidden"});
-  $('.card').on('mouseenter',function(){
-    $(this).animate({height: "325px"},500);
-    $(this).find('.hiddenTxt').animate({opacity: 1}, 500).css({visibility: "visible"});
-  });
-  $('.card').on('mouseleave',function(){
-    $(this).animate({height: "240px"},500);
-    $(this).find('.hiddenTxt').animate({opacity: 0}, 500);
-  });
+  // $('.hiddenTxt').css({visibility: "hidden"});
+  // $('.card').on('mouseenter',function(){
+  //   $(this).animate({height: "325px"},500);
+  //   $(this).find('.hiddenTxt').animate({opacity: 1}, 500).css({visibility: "visible"});
+  // });
+  // $('.card').on('mouseleave',function(){
+  //   $(this).animate({height: "240px"},500);
+  //   $(this).find('.hiddenTxt').animate({opacity: 0}, 500);
+  // });
 
 });
