@@ -4,8 +4,15 @@ body {
 	color:#fff;
 	font-family: 'Montserrat', sans-serif;
 }
+.row{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
 .container-fluid{
 	padding: 0;
+}
+main{
+	overflow-x: hidden;
 }
 h1{
   font-size: 70px ;
@@ -27,7 +34,7 @@ h2 {
 }
 #slide1 {
 	background:url("../img/img2.jpg") center 0 no-repeat fixed;
-	margin-top: -57px;
+	/* margin-top: -57px; */
 }
 #slide2 {
 	background: url("../img/img4.jpg") center 0 no-repeat fixed;
@@ -49,6 +56,7 @@ h2 {
 }
 nav{
 	background-color: transparent;
+	margin-top: -50px;
 	transition: all 0.3s linear;
 }
 .navbar-brand{
@@ -229,8 +237,8 @@ nav{
 	}
 }
 /* Responsive time line */
-/* @media (max-width: 767px) { */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) { */
+@media (max-width: 767px) {
   ul.timeline:before {
       left: 40px;
   }
