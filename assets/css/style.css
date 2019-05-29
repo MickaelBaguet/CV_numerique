@@ -229,7 +229,8 @@ nav{
 	}
 }
 /* Responsive time line */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
+@media (max-width: 1200px) {
   ul.timeline:before {
       left: 40px;
   }
