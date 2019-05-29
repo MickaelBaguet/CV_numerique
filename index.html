@@ -3,46 +3,74 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>CV Mickael BAGUET</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<!-- CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<!-- Animate on Scroll JS -->
+	<!-- Animate on Scroll CSS -->
 	<link href="assets/css/aos.css" rel="stylesheet">
+	<!-- CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div class="container-fluid">
-    <!-- Le sticky se bloque à la rencontre la balise /header -->
-		<nav class="navbar sticky-top navbar-dark d-flex justify-content-end">
-		  <a class="navbar-brand mr-5" id="accueil" href="#">Accueil</a>
-		  <a class="navbar-brand mr-5" href="#profil">Profil</a>
-			<a class="navbar-brand mr-5" href="#comp">Compétences</a>
-			<a class="navbar-brand mr-5" href="#exp">Exp pro.</a>
-		  <a class="navbar-brand mr-5" href="#projet">Mes projets</a>
-		  <a class="navbar-brand mr-5" href="#formation">Formations</a>
-		  <a class="navbar-brand mr-5" href="#contact">Contact</a>
+		<nav class="d-none d-md-flex navbar sticky-top navbar-dark justify-content-end">
+		  <a class="navbar-brand mr-4" id="accueil" href="#">Accueil</a>
+		  <a class="navbar-brand mr-4" href="#profil">Profil</a>
+			<a class="navbar-brand mr-4" href="#comp">Compétences</a>
+			<a class="navbar-brand mr-4" href="#exp">Exp pro.</a>
+		  <a class="navbar-brand mr-4" href="#projet">Mes projets</a>
+		  <a class="navbar-brand mr-4" href="#formation">Formations</a>
+		  <a class="navbar-brand mr-4" href="#contact">Contact</a>
 		</nav>
+		<!--Navbar burger-->
+		<nav class="d-block d-sm-none d-navbar sticky-top navbar-light navbar-1 white">
+		  <!-- Navbar brand -->
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <!-- Collapse button -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+		    aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		  <!-- Collapsible content -->
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+		    <!-- Links -->
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Features</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Pricing</a>
+		      </li>
+		    </ul>
+		    <!-- Links -->
+		  </div>
+		  <!-- Collapsible content -->
+		</nav>
+		<!--/.Navbar-->
     <div id="slide1">
       <div class="slide_inside text-center">
-        <h1 class="mt-5">Mickael BAGUET</h1>
+        <h1 class="mt-5 pt-5">Mickael BAGUET</h1>
         <p>Développeur web et web mobile - Junior</p>
       </div>
     </div>
 		<!-- Section A propos moi -->
-    <section id="profil">
-      <div class="row noir ml-5 my-5">
-				<div data-aos="fade-right" class="col-8">
-					<h2 class="text-center pb-5">A PROPOS DE MOI :</h2>
-					<p>J’ai pu acquérir grâce à mes dernières expériences professionnelles la capacité d’écouter, d’analyser et de répondre aux problèmes d’un public varié.</p>
-					<p>Dynamique et autonome, je sais m’adapter rapidement à diverses situations.</p>
-					<p>Bon niveau d’anglais en lecture et écriture.</p>
-					<p>Disponible de suite, je suis mobile.</p>
-					<p class="font-weight-bold text-center display-4">(Emplacement à remplir plus tard)</p>
-				</div>
-				<div data-aos="fade-left" class="col-4">
-					<img src="assets/img/moi2.png" alt="Photo perso" width="340" class="shadow-lg rounded">
+		<span id="profil"></span>
+    <section>
+      <div class="text-sm-left text-center noir ml-md-5 my-md-5">
+				<h2 class="text-center my-5 mt-md-1">A PROPOS DE MOI :</h2>
+				<div class="row">
+					<div data-aos="fade-right" class="col-12 col-md-4">
+						<img src="assets/img/moi2.png" alt="Photo perso" width="340" class="shadow-lg img-fluid rounded">
+					</div>
+					<div data-aos="fade-left" class="col-12 col-md-8 my-5">
+						<p>J’ai pu acquérir grâce à mes dernières expériences professionnelles la capacité d’écouter, d’analyser et de répondre aux problèmes d’un public varié.</p>
+						<p>Dynamique et autonome, je sais m’adapter rapidement à diverses situations.</p>
+						<p>Bon niveau d’anglais en lecture et écriture.</p>
+						<p>Disponible de suite, je suis mobile.</p>
+					</div>
 				</div>
       </div>
     </section>
@@ -52,7 +80,7 @@
 				<div class="slide_inside">
 					<h2 class="text-center pb-3">MES COMPETENCES</h2>
 		      <div class="slide_inside mt-3">
-						<div class="d-flex justify-content-around">
+						<div class="d-flex targetComp justify-content-around">
 							<img data-aos="fade-up-right" src="assets/img/icons-html5.png" alt="">
 							<img data-aos="fade-up-right" src="assets/img/icons-css3.png" alt="">
 							<img data-aos="fade-up" src="assets/img/icons-bootstrap.png" alt="">
@@ -75,7 +103,8 @@
 	    </div>
 		</section>
 		<!-- Section Parcours pro -->
-		<section id="exp">
+		<span id="exp"></span>
+		<section>
       <div class="row noir mx-4 my-5 d-block justify-content-center">
 				<h2 class="text-center mb-5">EXPÉRIENCES PROFESSIONNELLES</h2>
 				<ul class="timeline">
@@ -160,7 +189,11 @@
 							<img class="card-img-top" src="assets/img/ileBnB.png" alt="Ile BnB">
 							<div class="card-body">
 								<p class="title">Ile BnB</p>
-	            	<p class="hiddenTxt">Équipe de 3 / Utilisation de AngularJS Durée projet: 3j</p>
+	            	<p class="mt-2">
+									<li class="hiddenTxt">Équipe de 3</li>
+									<li class="hiddenTxt">Utilisation de AngularJS</li>
+									<li class="hiddenTxt">Durée projet: 3j</li>
+								</p>
 							</div>
 						</a>
 					</div>
@@ -169,7 +202,11 @@
 							<img class="card-img-top" src="assets/img/Lame-a-nue.png" alt="Lame à nue">
 							<div class="card-body">
 								<p class="title">Lame à nue</p>
-								<p class="hiddenTxt">Équipe de 3 / Utilisation de JQuery Durée projet: 3j</p>
+								<p class="hiddenTxt mt-2">
+									<li class="hiddenTxt">Équipe de 3</li>
+									<li class="hiddenTxt">Utilisation de JQuery</li>
+									<li class="hiddenTxt">Durée projet: 3j</li>
+								</p>
 							</div>
 						</a>
 					</div>
@@ -177,7 +214,8 @@
 	    </div>
 		</section>
 		<!-- Section Formation -->
-		<section id="formation">
+		<span id="formation"></span>
+		<section>
       <div class="row noir mx-4 my-5 d-block justify-content-center">
 				<h2 class="text-center mb-5">FORMATIONS</h2>
 				<ul class="timeline">
@@ -239,16 +277,24 @@
 				<h2 class="text-center mb-5">CONTACT</h2>
 				<div class="row d-flex noir text-center justify-content-around">
 					<div data-aos="fade-right" class="col-2">
-						<img src="assets/img/github.png" alt="Logo Github">
+						<a href="https://github.com/MickaelBaguet">
+							<img src="assets/img/github.png" alt="Logo Github">
+						</a>
 					</div>
 					<div data-aos="fade-up" class="col-2">
-						<img class="rounded" src="assets/img/link.png" alt="Logo Linkedin" width="120" height="120">
+						<a href="https://www.linkedin.com/in/mickael-baguet-713a35185/">
+							<img class="rounded" src="assets/img/link.png" alt="Logo Linkedin" width="120" height="120">
+						</a>
 					</div>
 					<div data-aos="fade-up"	 class="col-2">
-						<img src="assets/img/mail.png" alt="Logo Mail" width="120" height="120">
+						<a href="mailto:baguet.mickael@gmail.com">
+							<img src="assets/img/mail.png" alt="Logo Mail" width="120" height="120">
+						</a>
 					</div>
 					<div data-aos="fade-left" class="col-2">
-						<img src="assets/img/tel.png" alt="Logo Phone" width="120" height="120">
+						<a href="tel:0628640983">
+							<img src="assets/img/tel.png" alt="Logo Phone" width="120" height="120">
+						</a>
 					</div>
 				</div>
 	    </div>

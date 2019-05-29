@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color:#fff;
-	font: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .container-fluid{
 	padding: 0;
@@ -41,21 +41,8 @@ h2 {
 	height: 400px;
 	padding-top: 50px;
 }
-/* Gestion du contenu */
-.slide_inside {
-	width: 980px;
-	margin: 0 auto;
-}
-#slide1  .slide_inside {
-	text-align:center;
-}
-#slide2 .slide_inside p {
-	text-align:justify;
-}
-#slide3 .slide_inside {
-	background-color: rgba(0, 0, 0, 0.5);
-	margin-top:50px;
-	padding:50px;
+#slide4 img:hover{
+	transform: scale(1.08);
 }
 nav{
 	background-color: transparent;
@@ -64,48 +51,24 @@ nav{
 .navbar-brand{
 	font-size: 1em;
 }
-.hiddenTxt{
-	visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s ease-out;
-}
-.card:hover .hiddenTxt{
-	visibility: visible;
-	opacity: 1;
-}
 .card{
 	height: 240px;
-	transition: all 0.3s linear;
 }
-.card:hover{
-	height: 300px;
-	transition: all 0.3s linear;
-	transform: scale(1.05);
+.card a{
+	text-decoration: none;
+	color: inherit;
 }
 .solid-nav {
 	background-color: white;
 	border-bottom: 1px black solid;
 	transition: all 0.3s linear;
 }
+/* Changement de color de la navBav lors du scroll */
 .changeColor{
 	color: black !important;
 	transition: all 0.3s linear;
 }
-.card p{
-	margin-bottom: 0;
-}
-/* Progress bar circle */
-.circles {
-  margin-bottom: -10px;
-}
-.circle {
-  width: 100px;
-  margin: 6px 6px 20px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  line-height: 1.2;
-}
+/* Affichage des % dans le cercle */
 .circle strong {
   position: absolute;
   top: 30px;
@@ -115,15 +78,11 @@ nav{
   line-height: 40px;
   font-size: 30px;
 }
+/* Modif affichage % */
 .circle strong i {
   font-style: normal;
   font-size: 0.6em;
   font-weight: normal;
-}
-.circle span {
-  display: block;
-  color: #aaa;
-  margin-top: 12px;
 }
 /* Timeline des compétence */
 .timeline {
