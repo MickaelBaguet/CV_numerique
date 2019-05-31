@@ -43,7 +43,7 @@ h2 {
 }
 #slide3 {
 	background: url("../img/img5.jpg") center 0 no-repeat fixed;
-	height: 525px;
+	height: 550px;
 	padding-top:50px;
 }
 #slide4 {
@@ -58,6 +58,9 @@ nav{
 	background-color: transparent;
 	margin-top: -50px;
 	transition: all 0.3s linear;
+}
+.miniNav{
+	margin-top: -61px;
 }
 .navbar-brand{
 	font-size: 1em;
@@ -226,11 +229,11 @@ nav{
 		height: 660px;
 	}
 	#slide3 {
-		height: 550;
+		height: 910px;
 		padding-top: 50px;
 	}
 	#slide4 {
-		height: 500px;
+		height: 370px;
 	}
 }
 /* Mise en page pour les téléphones portables */
@@ -239,11 +242,14 @@ nav{
 		height: 660px;
 	}
 	#slide3 {
-		height: 950px;
+		height: 1350px;
 		padding-top: 50px;
 	}
 	#slide4 {
 		height: 500px;
+	}
+	.circle canvas{
+		margin-left: -10px;
 	}
 }
 /* Responsive time line */
