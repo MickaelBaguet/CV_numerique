@@ -223,13 +223,13 @@ nav{
 .timeline-body > p + p {
     margin-top: 5px;
 }
-/* Mise en page pour les téléphones portables */
+/* Mise en page pour les tablettes */
 @media screen and (max-device-width: 768px){
 	#slide2 {
 		height: 660px;
 	}
 	#slide3 {
-		height: 910px;
+		height: 930px;
 		padding-top: 50px;
 	}
 	#slide4 {
