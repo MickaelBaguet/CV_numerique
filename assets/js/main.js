@@ -36,39 +36,39 @@ $(function(){
   function animateCircle(){
     test = false;
     // Cercle html5
-    $('#html').circleProgress({value: 0.9,animation: {duration: 2500}, fill: {gradient: ["#e65100", "#ff6d00"]}})
+    $('#html').circleProgress({value: 0.8,animation: {duration: 2500}, fill: {gradient: ["#e65100", "#ff6d00"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
     });
     // Cercle css
-    $('#css').circleProgress({value: 0.80,animation: {duration: 2500}, fill: {gradient: ["#0277bd", "#039be5"]}})
+    $('#css').circleProgress({value: 0.70,animation: {duration: 2500}, fill: {gradient: ["#0277bd", "#039be5"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
     });
     // Cercle bootstrap
-    $('#bootstrap').circleProgress({value: 0.80,animation: {duration: 2500}, fill: {gradient: ["#5f36aa", "#763ae8"]}})
+    $('#bootstrap').circleProgress({value: 0.70,animation: {duration: 2500}, fill: {gradient: ["#5f36aa", "#763ae8"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
     });
     // Cercle javascript
-    $('#javascript').circleProgress({value: 0.7,animation: {duration: 2500}, fill: {gradient: ["#ffd400", "#ffe45e"]}})
+    $('#javascript').circleProgress({value: 0.65,animation: {duration: 2500}, fill: {gradient: ["#ffd400", "#ffe45e"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
     });
     // Cercle jquery
-    $('#jquery').circleProgress({value: 0.70,animation: {duration: 2500}, fill: {gradient: ["#172c45", "#193556"]}})
+    $('#jquery').circleProgress({value: 0.65,animation: {duration: 2500}, fill: {gradient: ["#172c45", "#193556"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
     });
     // Cercle angularjs
-    $('#angularjs').circleProgress({value: 0.6,animation: {duration: 2500}, fill: {gradient: ["#b71c1c", "#dd2c00"]}})
+    $('#angularjs').circleProgress({value: 0.55,animation: {duration: 2500}, fill: {gradient: ["#b71c1c", "#dd2c00"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(55 * progress) + '<i>%</i>');
     });
     // Cercle php
-    $('#php').circleProgress({value: 0.1,animation: {duration: 2500}, fill: { color: '#00bcd4' }})
+    $('#php').circleProgress({value: 0.2,animation: {duration: 2500}, fill: { color: '#00bcd4' }})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(10 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(20 * progress) + '<i>%</i>');
     });
   }
 });
