@@ -27,6 +27,12 @@ h2 {
 .noir{
 	color: black;
 }
+#cv{
+	transition: transform 0.2s;
+}
+#cv:hover{
+	transform: scale(1.1);
+}
 /* Mise en place des différentes parties / slides */
 #slide1, #slide2, #slide3, #slice4 {
 	height: 600px;
@@ -51,8 +57,11 @@ h2 {
 	height: 400px;
 	padding-top: 50px;
 }
+#slide4 img{
+	transition: transform 0.5s;
+}
 #slide4 img:hover{
-	transform: scale(1.08);
+	transform: scale(1.1);
 }
 nav{
 	background-color: transparent;
@@ -226,7 +235,7 @@ nav{
 /* Mise en page pour les tablettes */
 @media screen and (max-device-width: 768px){
 	#slide2 {
-		height: 660px;
+		height: 600px;
 	}
 	#slide3 {
 		height: 940px;
@@ -239,7 +248,7 @@ nav{
 /* Mise en page pour les téléphones portables */
 @media screen and (max-device-width: 576px){
 	#slide2 {
-		height: 660px;
+		height: 850px;
 	}
 	#slide3 {
 		height: 1320px;

@@ -36,9 +36,9 @@ $(function(){
   function animateCircle(){
     test = false;
     // Cercle html5
-    $('#html').circleProgress({value: 0.8,animation: {duration: 2500}, fill: {gradient: ["#e65100", "#ff6d00"]}})
+    $('#html').circleProgress({value: 0.75,animation: {duration: 2500}, fill: {gradient: ["#e65100", "#ff6d00"]}})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
     });
     // Cercle css
     $('#css').circleProgress({value: 0.70,animation: {duration: 2500}, fill: {gradient: ["#0277bd", "#039be5"]}})
@@ -66,9 +66,14 @@ $(function(){
       $(this).find('strong').html(Math.round(55 * progress) + '<i>%</i>');
     });
     // Cercle php
-    $('#php').circleProgress({value: 0.2,animation: {duration: 2500}, fill: { color: '#00bcd4' }})
+    $('#php').circleProgress({value: 0.3,animation: {duration: 2500}, fill: { color: '#00bcd4' }})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(20 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
+    });
+    // Cercle mysql
+    $('#mysql').circleProgress({value: 0.25,animation: {duration: 2500}, fill: { gradient: ["#4479a1", "#e6882e"] }})
+    .on('circle-animation-progress', function(event, progress) {
+      $(this).find('strong').html(Math.round(25 * progress) + '<i>%</i>');
     });
   }
 });
