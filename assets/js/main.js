@@ -71,9 +71,9 @@ $(function(){
       $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
     });
     // Cercle mysql
-    $('#mysql').circleProgress({value: 0.25,animation: {duration: 2500}, fill: { gradient: ["#4479a1", "#e6882e"] }})
+    $('#mysql').circleProgress({value: 0.30,animation: {duration: 2500}, fill: { gradient: ["#4479a1", "#e6882e"] }})
     .on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(25 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
     });
   }
 });
